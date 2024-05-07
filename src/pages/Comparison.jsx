@@ -65,7 +65,7 @@ export function Comparison() {
         Resume JD Comparison
       </Typography>
       <MultipleFileUpload onChange={handleResumeChange} />
-      {(!jdFile && jdString.length === 0) && <InputFileUpload onChange={handleJdFileChange} />}
+      {(jdString.length === 0) && <InputFileUpload onChange={handleJdFileChange} />}
       {(!jdFile) && <TextField
         id="jd-string"
         label="or enter JD as String here"
